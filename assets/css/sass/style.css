@@ -35,6 +35,12 @@ body {
 .listado-izquierdo {
   width: 220px;
   float: right;
+  display: block;
+}
+@media screen and (max-width: 599px) {
+  .listado-izquierdo {
+    display: none;
+  }
 }
 
 .cabecera-listado {
@@ -52,6 +58,24 @@ body {
 
 .newsletter h2 {
   font-size: 24px;
+}
+
+.oculto {
+  display: block;
+}
+@media screen and (max-width: 599px) {
+  .oculto {
+    display: none;
+  }
+}
+
+p {
+  font-size: 20px;
+}
+@media screen and (max-width: 599px) {
+  p {
+    font-size: 8px;
+  }
 }
 
 .menu {

@@ -1,3 +1,7 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixin';
+
+
 * {
     box-sizing: border-box;
 }
@@ -35,11 +39,19 @@ body {
 .listado-izquierdo {
     width: 220px;
     float: right;
+    display: block;
+
+    @include phone{
+        display: none; 
+    }
+    @include tablet{
+        display: inline-block;
+    }
 }
 
 .cabecera-listado {
     width: 220px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid $gray;
 }
 
 .newsletter {
@@ -53,3 +65,21 @@ body {
 .newsletter h2 {
     font-size: 24px
 }
+
+.oculto{
+    display: block;
+
+    @include phone{
+        display: none;
+    }
+}
+
+
+p {   
+   font-size: 20px;  
+ 
+   @include phone {     
+      font-size: 8px; 
+   } 
+}
+

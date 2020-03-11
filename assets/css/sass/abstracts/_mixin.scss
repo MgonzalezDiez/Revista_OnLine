@@ -1,0 +1,9 @@
+@mixin phone { 
+  @media screen and (max-width: 599px) { @content ; } 
+} 
+@mixin tablet { 
+  @media all and (min-width: 600px) { @content ; } 
+} 
+@mixin desktop { 
+  @media all and (min-width: 1200px) { @content ; } 
+} 
